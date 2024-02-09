@@ -1,0 +1,1 @@
+python -u ./shell_menu.py
