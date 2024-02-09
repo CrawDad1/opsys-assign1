@@ -17,13 +17,32 @@ If running run_shell_menu.bat did not work properly, please ensure your system m
 The following is the menu presented when running the script.
 
 - Please Select one of the following options:
-- [note: <path> refers to a windows style path eg. '.\\path\\to\\file']
-- [note: <path> and <message> can include whitespace if enclosed in quotations.]
-- (1) dir <path>: display contents of directory <path> (defaults to current directory)
-- (2) cd: display current directory (or change current directory to <path>)
-- (3) mkdir <path>: make new directory at <path> (check for successful creation using 'dir')
-- (4) echo <message>: prints <message> to the terminal
-    - <message> can include spaces if you use quotations
-- (5) type <path>: prints contents of text file to the terminal
+- [note: \<path\> refers to a windows style path eg. '.\\path\\to\\file']
+- [note: \<path\> and \<message\> can include whitespace if enclosed in quotations.]
+- (1) dir \<path\> display contents of directory \<path\> (defaults to current directory)
+- (2) cd: display current directory (or change current directory to \<path\>
+- (3) mkdir \<path\> make new directory at \<path\> (check for successful creation using 'dir')
+- (4) echo \<message\>: prints \<message\> to the terminal
+- (5) type \<path\> prints contents of text file to the terminal
 - (0) Exit Program
+
+## Making a selection
+The manu includes a brief description of how to perform each command, but here is a more precise example. 
+
+The user input is expected to be in the format:
+- (integer choice) (string argument) (any further arguments will be discarded)
+
+arguments are separated by spaces, so if you want to include spaces in the argument, please wrap the input in quotations (")
+
+example:
+- 3 ./new_folder all arguments after ./new_folder are discarded
+- accepted arguments: 
+    - menu selection: 3
+    - \<path\> argument: ./new_folder
+
+- 3 "./new folder as an example" has spaces in it
+- accepted arguments:
+    - menu selection: 3
+    - \<path\> argument: "./new folder as an example"
+
 

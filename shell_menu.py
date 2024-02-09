@@ -67,7 +67,6 @@ def main():
         "(2) cd: display current directory (or change current directory to <path>)\n"
         "(3) mkdir <path>: make new directory at <path> (check for successful creation using 'dir')\n"
         "(4) echo <message>: prints <message> to the terminal\n"
-        "  - <message> can include spaces if you use quotations\n"
         "(5) type <path>: prints contents of text file to the terminal\n"
         "\n"
         "(0) Exit Program\n"
